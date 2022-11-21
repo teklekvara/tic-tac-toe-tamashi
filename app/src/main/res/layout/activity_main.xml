@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
+
+
+    <LinearLayout
+        android:id="@+id/saxeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tic Tac Toe"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/saxeli2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/saxeli"
+        android:layout_marginTop="20dp"
+
+
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="motamashe 1"
+            android:textSize="20dp"
+            android:textColor="@color/black" >
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/angarishi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/saxeli2"
+        android:layout_marginTop="20dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/pirveli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp" >
+
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/meore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/saxeli2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                android:backgroundTint="@color/purple"
+                tools:text="1"
+                android:tag="1"
+                >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                android:backgroundTint="@color/purple"
+                tools:text="2"
+                android:tag="2"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/purple"
+                android:textSize="60sp"
+                tools:text="3"
+                android:tag="3"
+                >
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:textSize="60sp">
+
+            <Button
+                android:id="@+id/b4"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="4"
+                android:tag="4"
+                >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/b5"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="5"
+                android:tag="5"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/b6"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="6"
+                android:tag="6"
+                >
+
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/purple"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/b7"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="7"
+                android:tag="7"
+                >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/b8"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="8"
+                android:tag="8"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/b9"
+                android:backgroundTint="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="60sp"
+                tools:text="9"
+                android:tag="9"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+            <TextView
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" reset "
+                android:textSize="25dp"
+                android:onClick="reset"
+                android:textColor="@color/white"
+                android:background="@color/red">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
